@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [gridtesting]">
+  <test thread-count="5" name="chromebrowser(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="aug27.calculator">
+        <methods>
+          <include name="launch"/>
+          <include name="verifyCalculation"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- aug27.calculator -->
+    </classes>
+  </test> <!-- chromebrowser(failed) -->
+  <test thread-count="5" name="firefoxbrowser(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="aug27.calculator">
+        <methods>
+          <include name="launch"/>
+          <include name="verifyCalculation"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- aug27.calculator -->
+    </classes>
+  </test> <!-- firefoxbrowser(failed) -->
+</suite> <!-- Failed suite [gridtesting] -->
